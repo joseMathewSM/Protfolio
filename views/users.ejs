@@ -1,0 +1,12 @@
+<%- include partials/header.ejs %>
+
+<h1>Users</h1>
+
+    <ul>
+        <% for (var i=0; i < userList.length; i++) { %>
+            <li><%= userList[i] %></li>
+        <% } %>
+    </ul>
+    
+</body>
+</html>
