@@ -1,21 +1,108 @@
 <%- include partials/header.ejs %>
 
-<div class="container-fluid" >
-    <div class="row">
-        <div class="col-xs-4">
-		
-            <img src="http://localhost:3000/images/jose.jpg" width = "400px" height = "300px">
+ <div class="jumbotron">
+        <div class="container text-center">
+            <h1>Jose Mathew</h1>
+            <p>Passionate Computer Programming student at Georgian College. </p>
 
+            <div class="btn-group">
+				<a href="" class="btn-group btn-lg btn-info">Home</a>
+				<a href="#About" class="btn-group btn-lg btn-default">About</a>
+                <a href="#Services" class="btn-group btn-lg btn-info">Service</a>
+                <a href="#Portfolio" class="btn-group btn-lg btn-default">Portfolio</a>
+                <a href="/Contact" class="btn-group btn-lg btn-info">Contact</a>
+            </div>
         </div>
-        <div class="col-xs-8">
-            <h2>Jose Mathew</h2>
-            <p>Computer Programming Student at Georgian College</p>
-			<p>2 Kozlov Street, #1002, Barrie, Ontario</p>
-			<p>705-816-2838, josemathew.sm@gmail.com </p>
-        </div>   
     </div>
-</div>
 
+
+    <div class="container" id="Services">
+        <section>
+            <div class="page-header" >
+                <h2>Services. <small>Check out my excellent Services.</small></h2>
+            </div>
+        </section>
+
+
+        <div class="row">
+            <div class="col-lg-4">
+					<img src="images/skill1.jpg" height="170" width="350">
+            </div>
+            <div class="col-lg-4">
+                <img src="images/skill2.jpg" height="170" width="350">
+            </div>
+            <div class="col-lg-4">
+                <img src="images/skill3.jpg" height="170" width="350">
+            </div>
+        </div>
+		<hr>
+		<div class="row">
+            <div class="col-lg-4">
+					<img src="images/skill4.jpg" height="170" width="350">
+            </div>
+            <div class="col-lg-4">
+                <img src="images/skill5.jpg" height="170" width="350">
+            </div>
+            <div class="col-lg-4">
+                <img src="images/skill6.jpg" height="170" width="350">
+            </div>
+        </div>
+    </div>
+
+	<hr>
+
+	 <div class="container" id="About">
+        <section>
+            <div class="page-header" >
+                <h2>About Me</h2>
+            </div>
+        </section>
+	</div>
+	<div class="well">
+		<div class="container"
+			<div class="row">
+				 <div class="col-lg-4">
+				 <div class="img-circle">
+					<img  src="images/jose.jpg" class="img-circle" height="150" width="250" >
+					</div>
+				</div>	
+				<div class="col-lg-8" style = "padding-top:20px">
+					<p> I am Jose Mathew currently studying in georgian college. I am a second year Computer Programming student.
+					I have finished 1 of my 2 Co-op Work Terms. I am currently looking for job oppourtunities to complete my second co-op term.</p>
+				</div>
+			</div>
+		</div>			
+	</div>
+     <hr>
+
+	<div class = "container" id="Portfolio">
+		
+		<div class="row">
+			<section>
+            <div class="page-header" >
+                <h2>Portfolio</h2>
+            </div>
+			</section>
+			<div class="col-lg-6">
+				<h3>Education</h3>
+				<b>Computer Programmer Diploma </b></br>
+				<p>Georgian College, Barrie, Canada  - 08.2014 – present </p>
+				<b>Computer Engineering Diploma </b></br>
+				<p>Govt. Polytechnic College, Kalamassery, Kerala, India - 06.2011– 06.2014 </p>
+
+			</div>
+
+			<div class="col-lg-6">
+				<h3>Work Experience</h3>
+				<b>SynergyTech – Software Quality Analyst (05.2015 – 08.2015)  </b></br>
+				<p>Worked with systems analysts, developers, and quality control analysts throughout the project to ensure high quality to the project.  </p>
+				<b>Biz-induce.com – Web Developer (08.2013 – 08.2014)  </b></br>
+				<p>Worked par-time in teams to develop and maintain websites. Volunteered in learning and understanding Internet Marketing and SEO best practices.  </p>
+
+			</div>
+		</div>
+	</div>
+
+	<%- include partials/footer.ejs %>
   </body>
-  <%- include partials/footer.ejs %>
 </html>
